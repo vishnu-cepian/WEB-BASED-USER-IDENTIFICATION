@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reset Password</title>
+  <link rel="stylesheet" href="../static/css/style3.css">
+</head>
+<body>
+  <div class="container">
+    <form action="{{url_for('reset')}}" method="post">
+      {% if text is defined and text %}
+          <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            {{text}}
+          </div>
+          {% endif %}
+      <h2>TOKEN</h2>
+      <div class="form-group">
+        <label for="new-password">User Name</label>
+        <input type="text" id="new-password" name="username" required>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit">GENERATE TOKEN</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

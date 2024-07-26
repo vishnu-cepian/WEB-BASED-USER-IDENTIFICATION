@@ -1,0 +1,8 @@
+# WEB BASED USER IDENTIFICATION WEB-APP
+
+## Technologies Used
+
+  - HTML
+  - CSS
+  - PYTHON FLASK
+  - MYSQL
